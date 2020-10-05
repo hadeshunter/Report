@@ -1,0 +1,323 @@
+:root {
+  --fs-detail: 16px;
+  --fs_title: 25px;
+  --color: #333333;
+}
+
+.color-gold {
+  background-color: rgba(255, 215, 0, 1);
+}
+
+.color-pink {
+  background-color: rgb(237, 129, 247);
+}
+
+.color-green {
+  background-color: lime;
+}
+
+.color-blue {
+  background-color: lightskyblue;
+}
+
+@media only screen and (min-width: 0px) {
+  .k {
+    position: relative;
+  }
+
+  .wf {
+    width: 100%;
+  }
+
+  .main-form {
+    width: 100%;
+    float: left;
+  }
+  /*---------NavBar----------*/
+.topnav {
+  overflow: hidden;
+  background-color: #909399;
+
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.tab-setting{
+  background-color: #fff;
+}
+.topnav a:hover {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.topnav a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+.fa-globe-europe {
+  color: green;
+  font-size: 20px;
+}
+.dropdown-toggle {
+  color: rgba(0, 90, 171, 0.8);
+  font-weight: 500;
+}
+.dropdown-item {
+  color: rgba(0, 90, 171, 0.8);
+}
+
+  /* ---------Header--------- */
+  .tab-head {
+    width: 100%;
+    border: 0.5px solid rgba(51, 51, 51, 0.05);
+    padding: 20px;
+  }
+
+  .text-header {
+    font-weight: 600;
+    text-align: left;
+    font-size: 25px;
+  }
+
+  .main-container {
+    padding: 10px;
+  }
+
+  /* ---------Card---------- */
+  .card {
+    padding: 5px;
+    border: 0.5px solid rgba(51, 51, 51, 0.2);
+    border-radius: 3px;
+  }
+
+  .card-title {
+    background-color: rgba(13, 131, 235, 0.856);
+    padding: 10px;
+    font-weight: 400;
+  }
+  .card-titleb {
+    background-color: rgba(51, 51, 51, 0.1);
+    padding: 10px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .card-title span {
+    color: white;
+  }
+
+  .modal-dialog {
+    pointer-events: unset !important;
+  }
+
+  .modal-dialog {
+    max-width: none !important;
+  }
+  .card-container {
+    background-color: rgba(255, 255, 255, 1);
+    overflow: auto;
+    width: 100%;
+    /* overflow-x: scroll; */
+    /* overflow-y: scroll; */
+  }
+  .el-date-editor.el-input__inner{
+    width: 300px!important;
+    background: rgba(51, 51, 51, 0.1);
+  }
+  .el-input__inner{
+    background: rgba(51, 51, 51, 0.1);
+  }
+  .el-date-editor.el-input{
+    width: 300px!important;
+  }
+  .demonstration {
+    padding-bottom: 10px;
+  }
+  .select-item{
+    width: 185px!important;
+    border: none!important;
+    background: white!important ;
+  }
+  .el-input-group_prepend{
+    border-left: 1px solid white!important;
+  }
+ 
+  @media only screen and (min-width: 901px) {
+    .table {
+      width: 100%;
+      border: 1px solid rgb(166, 198, 230);
+      width: max-content;
+      width: 100%;
+    }
+    .table-title {
+      background-color: lightcyan;
+     
+    }
+  
+    .table tr {
+      background-color: white;
+      text-align: center;
+    }
+  
+    .high {
+      background-color: rgba(255, 50, 20, 0.5);
+      color: white;
+    }
+  
+    .table th {
+      border: 1px solid rgb(223, 232, 241, 1);
+      font-weight: 400;
+      vertical-align: middle;
+    }
+    .form-row{
+      margin-left: 20px;
+    }
+    /* end delete */
+    .fa-edit{
+      font-size: 15px;
+      color: #ffc107;
+      margin-left: 10px;
+    }
+    .fa-trash-alt{
+      margin-left: 10px;
+      font-size: 15px;
+      color: #dc3545;
+    }
+    .col-md-6 {
+      max-width: 49%!important;
+    }
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: baseline;
+      padding-bottom: 20px;
+    }
+    .col-sum {
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+      font-weight: 600;
+    }
+    .el-select .el-input {
+      width: 110px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .part {
+      padding: 0 10px 20px 10px;
+    }
+
+    .col-sum {
+      padding-inline-end: 20px;
+      font-weight: 600;
+    }
+    .topnav a:not(:first-child) {
+      display: none;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    /* --------Calendar---------- */
+    .calendar {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 50px;
+    }
+    .calendar-card {
+      width: 100%;
+    }
+  }
+  .year-picker {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+  }
+
+  .btn-calendar {
+    height: 40px;
+    width: 40px !important;
+    padding: 0 !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 750px) {
+    /* --------Calendar---------- */
+    .calendar {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-evenly;
+      padding-bottom: 50px;
+    }
+    .calendar-card {
+      width: 380px;
+    }
+    .calendar-description {
+      max-width: 300px;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .picker {
+      width: 100%;
+    }
+    .primary {
+      cursor: pointer;
+      background: rgba(0, 123, 255, 0.8);
+      border-color: rgba(0, 123, 255, 0.8);
+      color: #fff;
+      display: inline-block;
+      line-height: 1;
+      white-space: nowrap;
+      border: 1px solid #dcdfe6;
+      -webkit-appearance: none;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      outline: 0;
+      margin: 0;
+      -webkit-transition: 0.1s;
+      transition: 0.1s;
+      font-weight: 500;
+      padding: 12px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+    .el-icon-alarm-clock{
+      font-size: 20px;
+    }
+  }
+  @media only screen and (max-width: 900px) {
+    .topnav.responsive {
+      position: relative;
+    }
+  
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+ 
+  
+}

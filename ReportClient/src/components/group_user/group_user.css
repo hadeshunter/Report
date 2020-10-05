@@ -1,0 +1,104 @@
+:root {
+  --fs-detail: 18px;
+  --fs_title: 20px;
+  --color: #333333;
+}
+
+@media only screen and (min-width: 0px) {
+  .k {
+    position: relative;
+  }
+
+  .wf {
+    width: 100%;
+  }
+
+  .margin-t15 {
+    margin-top: 15px;
+  }
+
+  .align-center {
+    text-align: center;
+  }
+
+  .align-left {
+    text-align: left;
+    display: inline-block;
+  }
+
+  .main-form {
+    width: 100%;
+    float: left;
+  }
+
+  /* ---------Header--------- */
+  .main-container {
+    padding: 10px;
+  }
+
+  /* ---------Card---------- */
+  .card {
+    padding: 5px;
+    border: 0.5px solid rgba(51, 51, 51, 0.2);
+    border-radius: 3px;
+  }
+
+  .card-title {
+    background-color: rgba(13, 131, 235, 0.856);
+    padding: 10px;
+    font-weight: 400;
+  }
+
+  .card-title span {
+    color: white;
+  }
+
+  .card-container {
+    background-color: rgba(255, 255, 255, 1);
+    overflow: auto;
+    overflow-x: scroll;
+  }
+
+  .demonstration {
+    padding-bottom: 3px;
+  }
+
+  @media only screen and (min-width: 901px) {
+    .flex-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-bottom: 20px;
+    }
+
+    .col-sum {
+      padding-inline-start: 20px;
+      padding-inline-end: 20px;
+      font-weight: 600;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .part {
+      padding: 0 10px 20px 10px;
+    }
+  }
+
+  @media only screen and (max-width: 450px) {
+  }
+
+  .btn-add {
+    height: 40px;
+    width: 40px !important;
+    padding: 0 !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .el-dropdown-link {
+    cursor: pointer;
+    color: #409eff;
+  }
+  .el-icon-arrow-down {
+    font-size: 12px;
+  }
+}
