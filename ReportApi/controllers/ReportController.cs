@@ -281,5 +281,43 @@ namespace REPORT.controllers
             }
             return data;
         }
+        [Route("api/report/ReportSLA")]
+        [HttpPost]
+        public DataRespond ReportSLA(ReportRequest rq)
+        {
+            DataRespond data = new DataRespond();
+            try
+            {
+                data.success = true;
+                data.data = m_report.reportSLA(rq);
+                data.message = "success";
+            }
+            catch (Exception e)
+            {
+                data.success = false;
+                data.message = e.Message;
+                data.error = e;
+            }
+            return data;
+        }
+        [Route("api/report/ReportSum")]
+        [HttpPost]
+        public DataRespond ReportSum(ReportRequest rq)
+        {
+            DataRespond data = new DataRespond();
+            try
+            {
+                data.success = true;
+                data.data = m_report.reportSum(rq);
+                data.message = "success";
+            }
+            catch (Exception e)
+            {
+                data.success = false;
+                data.message = e.Message;
+                data.error = e;
+            }
+            return data;
+        }
     }
 }

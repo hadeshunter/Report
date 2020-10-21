@@ -570,5 +570,55 @@ namespace REPORT.service.report.impl
             }
             return result1;
         }
+
+        public dynamic reportSLA(ReportRequest rq)
+        {
+            object result = null;
+            var dyParam = new OracleDynamicParameters();
+            /*
+             * Truyền biến nếu có
+             * gồm tên biến, biến input và output
+             */
+            dyParam.Add("v_YEAR", OracleDbType.Int16, ParameterDirection.Input, rq.v_YEAR);
+            dyParam.Add("v_MONTH", OracleDbType.Int16, ParameterDirection.Input, rq.v_MONTH);
+            dyParam.Add("out_Param", OracleDbType.RefCursor, ParameterDirection.Output);
+            string connString = new ConnectionString().returnConnection();
+            OracleConnection conn = new OracleConnection(connString);
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            if (conn.State == ConnectionState.Open)
+            {
+                var query = "PKG_CNTT.sp_Report_Total";
+                result = SqlMapper.Query(conn, query, param: dyParam, commandType: CommandType.StoredProcedure);
+            }
+            return result;
+        }
+
+        public dynamic reportSum(ReportRequest rq)
+        {
+            object result = null;
+            var dyParam = new OracleDynamicParameters();
+            /*
+             * Truyền biến nếu có
+             * gồm tên biến, biến input và output
+             */
+            dyParam.Add("v_YEAR", OracleDbType.Int16, ParameterDirection.Input, rq.v_YEAR);
+            dyParam.Add("v_MONTH", OracleDbType.Int16, ParameterDirection.Input, rq.v_MONTH);
+            dyParam.Add("out_Param", OracleDbType.RefCursor, ParameterDirection.Output);
+            string connString = new ConnectionString().returnConnection();
+            OracleConnection conn = new OracleConnection(connString);
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            if (conn.State == ConnectionState.Open)
+            {
+                var query = "PKG_CNTT.sp_Report_Sum";
+                result = SqlMapper.Query(conn, query, param: dyParam, commandType: CommandType.StoredProcedure);
+            }
+            return result;
+        }
     }
 }

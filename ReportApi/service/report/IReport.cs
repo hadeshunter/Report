@@ -23,6 +23,8 @@ namespace REPORT.service.report
         dynamic insertFilterByID3(ReportRequest rq); // Insert data by id_yeu_cau and id stage = 8
         dynamic getFilterByID(ReportRequest rq);
         dynamic getWarningList(ReportRequest rq);
+        dynamic reportSLA (ReportRequest rq);
+        dynamic reportSum(ReportRequest rq);
         dynamic TestSql();
     }
 }

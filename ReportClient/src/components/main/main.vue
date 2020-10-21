@@ -155,6 +155,7 @@ import { homeUrl, ssoLogin, ssoLogout, ssoValidate } from "../../utils/sso";
 import user from "../user/user";
 import login from "../login/login";
 import setting from "../setting/settingComponent";
+import report from "../report/reportComponent";
 import reportDasboard from "../reportDasboard/reportDasboard";
 import reportListSLA from "../reportListSLA/reportListSLA";
 import observation from "../observation/observation";
@@ -362,6 +363,7 @@ export default {
     reportListSLAComponent: reportListSLA,
     observationComponent: observation,
     permissionComponent: permission,
+    reportComponent : report,
   },
   
 };

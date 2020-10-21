@@ -3,9 +3,9 @@ import { json2xml } from "./json2xml";
 import { xml2json } from "./xml2json";
 import { parseXml } from "./parseXml";
 
-// export var homeUrl = "http://localhost:8080";
-export var homeUrl = "http://10.70.51.11:2002";
-//export var authUrl = "http://localhost:8080/api/auth/login";
+export var homeUrl = "http://localhost:8080";
+// export var homeUrl = "http://10.70.31.18:2002";
+export var authUrl = "http://localhost:8080/api/auth/login";
 export var cashostURL = "https://id.vnpt.com.vn/cas/";
 export var cashostURLLogout = "https://id.vnpt.com.vn/cas/logout?service=";
 // export var exam =

@@ -34,5 +34,11 @@ export default {
   },
   getWarningList(data) {
     return responsitory.post(`${resource}/getWarningList`, data);
-  }
+  },
+  ReportSLA(data) {
+    return responsitory.post(`${resource}/ReportSLA`, data);
+  },
+  ReportSum(data) {
+    return responsitory.post(`${resource}/ReportSum`, data);
+  },
 };

@@ -1,7 +1,7 @@
 import axios from "axios";
 import $ from "jquery";
-const baseDomain = "http://10.70.51.11:2001";
-// const baseDomain = "http://localhost:56424";
+// const baseDomain = "http://10.70.31.18:2001";
+const baseDomain = "http://localhost:56424";
 const baseUrl = `${baseDomain}/api`;
 //const baseUrl =  'https://jsonplaceholder.typicode.com'
 //var token = getTokenByLocal();

@@ -400,7 +400,7 @@ export default {
       },
      
       slatimeList: [],
-      perPage: 10,
+      perPage: 15,
       currentPage: 1,
       pageOfItems: [],
       totalslatime: 0,
